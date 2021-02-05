@@ -7,3 +7,24 @@ body {
     margin-right: 0px;
     padding: 0px;
 }
+
+header {
+    background-color: #36454f;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: IBM_Plex_Serif;
+}
+
+header p {
+    color: white;
+    font-size: 4vh;
+    margin-top: 2.25vh;
+    margin-bottom: 2.25vh;
+    font-family: mainFont;
+    width: 20%;
+    float: left;
+    height: 55%;
+    margin-left: 1vw;
+}
