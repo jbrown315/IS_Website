@@ -28,3 +28,33 @@ header p {
     height: 55%;
     margin-left: 1vw;
 }
+
+header nav {
+    margin-top: 2.75vh;
+    margin-bottom: 2.75vh;
+    font-family: mainFont;
+    font-size: 3vh;
+    margin-left: 44vw;
+}
+
+nav a:link {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:active {
+  color: white;
+}
