@@ -23,7 +23,7 @@ header p {
     margin-top: 2.25vh;
     margin-bottom: 2.25vh;
     font-family: mainFont;
-    width: 20%;
+    width: 26.5%;
     float: left;
     height: 55%;
     margin-left: 1vw;
@@ -34,7 +34,8 @@ header nav {
     margin-bottom: 2.75vh;
     font-family: mainFont;
     font-size: 3vh;
-    margin-left: 44vw;
+    margin-right: 1vw;
+    float: right;
 }
 
 nav a:link {
@@ -57,4 +58,8 @@ nav a:hover {
 
 nav a:active {
   color: white;
+}
+
+#main p {
+    text-align: center;
 }
