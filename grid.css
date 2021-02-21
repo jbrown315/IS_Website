@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: [col1-start] 2vw [col1-end col2-start] 96vw [col2-end col3-start] 2vw [col3-end];
-    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 1fr [row2-end row3-start] 100px [row3-end];
+    grid-template-rows: [row1-start] 5vw [row1-end row2-start] 1fr [row2-end row3-start] 100px [row3-end];
 }
 
 header {
@@ -39,3 +39,4 @@ footer {
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
