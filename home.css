@@ -66,15 +66,18 @@ nav a:active {
 
 /*TESTING TIMELINE*/
 
-#main * {
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
+
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
+
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -87,6 +90,7 @@ nav a:active {
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+
 }
 
 /* Container around content */
@@ -95,6 +99,7 @@ nav a:active {
   position: relative;
   background-color: inherit;
   width: 50%;
+
 }
 
 /* The circles on the timeline */
@@ -147,6 +152,7 @@ nav a:active {
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
+
 }
 
 /* Fix the circle for containers on the right side */
@@ -154,20 +160,25 @@ nav a:active {
   left: -12px;
 }
 
-/* The actual content */
+/* The actual content
+ PADDING IS BREAKING IT RIGHT NOW
+ */
 .content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
   border-radius: 6px;
+
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
   .timeline::after {
-    left: 31px;
+    left: 28px;
   }
+
+
 
 /* Full-width containers */
   .box {
@@ -193,4 +204,21 @@ nav a:active {
   .right {
     left: 0%;
   }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#timetitle {
+    font-size: 5em;
+    color: white;
+    text-shadow: 4px 4px #36454f;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
+    width: 350px;
+    margin: auto;
+    margin-top: 2vh;
 }
