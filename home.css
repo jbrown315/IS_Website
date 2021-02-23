@@ -77,7 +77,6 @@ nav a:active {
   position: relative;
   max-width: 1200px;
   margin: 0px auto;
-
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -185,6 +184,7 @@ nav a:active {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+
   }
 
 /* Make sure that all arrows are pointing leftwards */
@@ -208,6 +208,7 @@ nav a:active {
 
 body {
     overflow-x: hidden;
+
 }
 
 #timetitle {
@@ -221,4 +222,5 @@ body {
     width: 350px;
     margin: auto;
     margin-top: 2vh;
+    box-shadow: 5px 5px #36454f;
 }
