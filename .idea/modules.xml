@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../Personal/US/11th/Web Design/Midterm/.idea/Midterm.iml" filepath="$PROJECT_DIR$/../../Personal/US/11th/Web Design/Midterm/.idea/Midterm.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Personal/US/11th/Web Design/Mortgage Loans/.idea/Mortgage Loans.iml" filepath="$PROJECT_DIR$/../../Personal/US/11th/Web Design/Mortgage Loans/.idea/Mortgage Loans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Nerual Net Test/.idea/Nerual Net Test.iml" filepath="$PROJECT_DIR$/../Nerual Net Test/.idea/Nerual Net Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Personal/US/11th/Web Design/RectCalc/.idea/RectCalc.iml" filepath="$PROJECT_DIR$/../../Personal/US/11th/Web Design/RectCalc/.idea/RectCalc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Website.iml" filepath="$PROJECT_DIR$/.idea/Website.iml" />
     </modules>
   </component>
