@@ -5,7 +5,4 @@ def sigmoid(x):
 
 
 
-
-weights = np.array([[0.1],[0.2]])
-print(weights.shape)
-print(weights)
+print(np.exp(2))
