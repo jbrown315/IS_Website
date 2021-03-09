@@ -1,32 +1,16 @@
 
-//function myFunction() {
-    //var test = document.getElementById("test");
 
-   // var text = document.createTextNode(math.matrix([[0.1], [0.2]]).toString());
-
-  //  test.appendChild(text)
-
-//}
 
 // The Sigmoid Function
 function sigmoid(x) {
 
-    //for (i=0;i<x.length;i++){
-    //    x[i][0] = -(x[i][0]);
-    //}
+    return(math.dotDivide(1, math.add(math.exp(math.unaryMinus(x)),1)));
 
-    var a = math.subset(x, math.index(0, 0), -(x.subset(math.index(0,0))));
-    var b = math.subset(a, math.index(1, 0), -(a.subset(math.index(1,0))));
-    var c = math.subset(b, math.index(2, 0), -(b.subset(math.index(2,0))));
-    var d = math.subset(c, math.index(3, 0), -(c.subset(math.index(3,0))));
-
-
-    return 1/(1+math.exp(d))
 }
 
 // Derivative of the sigmoid function
 function sigmoid_der(x) {
-    return sigmoid(x)*(1-sigmoid(x))
+    return math.dotMultiply(sigmoid(x),(math.subtract(1,sigmoid(x))))
 }
 
 function myFunction() {
@@ -70,14 +54,14 @@ for (epoch = 0; epoch < 10000; epoch++) {
 
     //Backpropogation
     //Calculating Error
-    var error = out_o - target_output;
+    var error = math.subtract(out_o, target_output);
 
     //Calculating derivative
     var derror_douto = error;
     var douto_dino = sigmoid_der(out_o);
 
     //Multiplying individual derivatives
-    var deriv = derror_douto * douto_dino;
+    var deriv = math.dotMultiply(derror_douto, douto_dino);
 
     //Multiplying with the 3rd individual derivative :
     //Finding the transpose of input_features
@@ -85,7 +69,7 @@ for (epoch = 0; epoch < 10000; epoch++) {
     var deriv_final = math.multiply(inputs, deriv);
 
     //Updating the weights values :
-    weights -= lr*deriv_final;
+    weights = math.subtract(weights,math.dotMultiply(lr, deriv_final));
 
     //Updating the bias weight value :
     for (var i = 0; i < deriv.length; i++) {
@@ -93,26 +77,37 @@ for (epoch = 0; epoch < 10000; epoch++) {
     }
 
     ///TESTING
-    var test = document.getElementById("test");
+   // var test = document.getElementById("test");
 
-    var abc = math.subset(in_o, math.index(1, 0), -(in_o.subset(math.index(1,0))));
+    //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
+  //  var abc = sigmoid(in_o);
 
-    var text = document.createTextNode((abc).toString());
+  //  var text = document.createTextNode(abc.toString());
 
-    test.appendChild(text);
+  //  test.appendChild(text);
 
     ///TESTING
 
 }
 //Taking inputs:
-var single_point = math.matrix([0, 1]);
+var single_point = math.matrix([[0], [1]]);
 
 //First step:
-var result1 = math.multiply(single_point, weights) + bias;
+var result1 = math.add(math.dotMultiply(single_point, weights), bias);
 
 //Second step:
 var result2 = sigmoid(result1);
 
+///TESTING
+    var test = document.getElementById("test");
 
+    //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
+    var abc = result2;
+
+    var text = document.createTextNode(abc.toString());
+
+    test.appendChild(text);
+
+    ///TESTING
 }
 

@@ -5,4 +5,4 @@ def sigmoid(x):
 
 
 
-print(np.exp(2))
+print(sigmoid(1))
