@@ -1,0 +1,16 @@
+.responsive-google-slides {
+    position: relative;
+    padding-bottom: 0%; /* 16:9 Ratio */
+    height: 83vh;
+    overflow: hidden;
+    margin-top: 2vh;
+  }
+  .responsive-google-slides iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60vw;
+    height: 72.5vh;
+    margin-left: 20%;
+  }
