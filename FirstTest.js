@@ -1,6 +1,4 @@
 
-
-
 // The Sigmoid Function
 function sigmoid(x) {
 
@@ -10,15 +8,15 @@ function sigmoid(x) {
 
 // Derivative of the sigmoid function
 function sigmoid_der(x) {
-    return math.dotMultiply(sigmoid(x),(math.subtract(1,sigmoid(x))))
+    return math.dotMultiply(sigmoid(x),(math.subtract(1,sigmoid(x))));
 }
 
 function myFunction() {
 //Define input features
 var input_features = math.matrix([
   [0, 0],
-  [1, 0],
   [0, 1],
+  [1, 0],
   [1, 1]
 ]);
 
@@ -45,9 +43,10 @@ var lr = 0.05;
 var epoch;
 
 for (epoch = 0; epoch < 10000; epoch++) {
+
     var inputs = input_features;
 
-    var in_o = math.multiply(inputs, weights);
+    var in_o = math.add(math.multiply(inputs, weights), bias);
 
     //Feed Forward Output
     var out_o = sigmoid(in_o);
@@ -65,28 +64,18 @@ for (epoch = 0; epoch < 10000; epoch++) {
 
     //Multiplying with the 3rd individual derivative :
     //Finding the transpose of input_features
-    var inputs = math.ctranspose(input_features);
+    var inputs = math.transpose(input_features);
     var deriv_final = math.multiply(inputs, deriv);
 
     //Updating the weights values :
-    weights = math.subtract(weights,math.dotMultiply(lr, deriv_final));
+    weights = math.subtract(weights, math.dotMultiply(lr, deriv_final));
 
     //Updating the bias weight value :
-    for (var i = 0; i < deriv.length; i++) {
-        bias -= lr * i;
+    for (var i = 0; i < math.subset(math.size(deriv), math.index(0)); i++) {
+        bias = math.subtract(bias, lr * math.subset(deriv, math.index(i,0)));
     }
 
-    ///TESTING
-   // var test = document.getElementById("test");
 
-    //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
-  //  var abc = sigmoid(in_o);
-
-  //  var text = document.createTextNode(abc.toString());
-
-  //  test.appendChild(text);
-
-    ///TESTING
 
 }
 //Taking inputs:
@@ -102,9 +91,9 @@ var result2 = sigmoid(result1);
     var test = document.getElementById("test");
 
     //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
-    var abc = result2;
+    var abc = math.subset(result2, math.index(1,0));
 
-    var text = document.createTextNode(abc.toString());
+    var text = document.createTextNode(abc);
 
     test.appendChild(text);
 
