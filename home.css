@@ -2,6 +2,26 @@ body {
     background-color: #0384fc;
 }
 
+h2 a:link {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    color: #36454f;
+}
+
+h2 a:active {
+    text-decoration: none;
+    color: #36454f;
+}
+
 .container {
     margin-left: 0px;
     margin-right: 0px;
@@ -113,6 +133,7 @@ nav a:active {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+
 }
 
 /* Place the container to the left */
@@ -201,6 +222,10 @@ nav a:active {
     left: 15px;
   }
 
+.box::after {
+    padding-top: 10px;
+}
+
 /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
@@ -236,4 +261,13 @@ footer p {
     margin-top: 2vh;
     font-family: mainFont;
     font-weight: normal;
+}
+
+.keyTerm {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75em;
 }

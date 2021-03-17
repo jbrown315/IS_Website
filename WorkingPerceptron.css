@@ -1,0 +1,11 @@
+
+h2 {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px #36454f;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-top: 2vh;
+    font-family: mainFont;
+    text-align: center;
+}

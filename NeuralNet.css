@@ -1,11 +1,42 @@
 
-h2 {
-    font-size: 4em;
-    color: white;
-    text-shadow: 3px 3px #36454f;
-    margin-bottom: 0px;
-    margin: auto;
-    margin-top: 2vh;
+@font-face {
     font-family: mainFont;
-    text-align: center;
+    src: IBM_Plex_Serif;
+}
+
+h2 {
+    padding-top: 2vh;
+}
+
+.subTitles {
+    font-size: 1.5em;
+    text-shadow: none;
+    color: white;
+    text-align: left;
+    padding-top: 5vh;
+}
+
+#neuronDiagram {
+    margin-left: 27.5vw;
+    width: 45vw;
+}
+
+.figures {
+    font-size: 0.75em;
+    padding-top: 0px;
+    text-shadow: none;
+    color: white;
+    font-family: mainFont;
+    width: 4vw;
+    margin: auto;
+    padding-bottom: 2vh;
+}
+
+.generalText {
+    color: white;
+    font-size: 1.25em;
+    font-family: mainFont;
+    width: 45vw;
+    margin: auto;
+    margin-bottom: 5vh;
 }
