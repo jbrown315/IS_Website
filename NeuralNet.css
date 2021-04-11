@@ -6,6 +6,7 @@
 
 h2 {
     padding-top: 2vh;
+    margin-bottom: 5vh;
 }
 
 .subTitles {
@@ -13,14 +14,20 @@ h2 {
     text-shadow: none;
     color: white;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 0vh;
     margin-bottom: 1vh;
 }
 
 #neuronDiagram {
-    margin-left: 27.5vw;
+    margin-left: 24vw;
     width: 45vw;
 }
+
+#ANNDiagram {
+    margin-left: 33vw;
+    width: 35vw;
+}
+
 
 .figures {
     font-size: 0.75em;
@@ -33,16 +40,13 @@ h2 {
     padding-bottom: 2vh;
 }
 
-#test p {
-    text-align: left;
-}
 
-.generalText {
+#main .generalText p {
     color: white;
     font-size: 1.25em;
     font-family: mainFont;
     width: 100%;
-
+    text-align: left;
     width: 45vw;
     margin: auto;
     margin-bottom: 5vh;
