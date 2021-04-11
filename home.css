@@ -22,6 +22,26 @@ h2 a:active {
     color: #36454f;
 }
 
+.linkhome:link {
+    text-decoration: none;
+    color: white;
+}
+
+.linkhome:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.linkhome:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.linkhome:active {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     margin-left: 0px;
     margin-right: 0px;

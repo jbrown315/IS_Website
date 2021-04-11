@@ -51,3 +51,48 @@ h2 {
     margin: auto;
     margin-bottom: 5vh;
 }
+
+@font-face {
+    font-family: mainFont;
+    src: IBM_Plex_Serif;
+}
+
+.continue {
+    color: white;
+    font-size: 1.75em;
+    margin-left: 36vw;
+    background-color: #0384fc;
+    border: 3px solid black;
+    border-radius: 100px;
+    box-shadow: 1px 1px black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: mainFont;
+}
+
+#bottomspace {
+    height: 5vh;
+    margin: 0px;
+}
+
+.continue:link {
+    text-decoration: none;
+    color: white;
+}
+
+.continue:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.continue:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px black;
+}
+
+.continue:active {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px black;
+}
