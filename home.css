@@ -100,6 +100,28 @@ nav a:active {
   color: white;
 }
 
+nav .selected:link {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+
+}
+
+nav .selected:visited {
+  color: black;
+}
+
+nav .selected:hover {
+  color: black;
+}
+
+nav .selected:active {
+  color: black;
+}
+
 #main p {
     text-align: center;
 }
@@ -290,4 +312,20 @@ footer p {
 
 h2 {
     font-size: 1.75em;
+}
+
+.selected {
+    background-color: white;
+    color: black;
+}
+
+#testline {
+    color: white;
+    background-color: white;
+    height: 5px;
+    padding-top: 0px;
+    margin-top: 2.45vw;
+    width: 40vw;
+    margin-right: 0px;
+    margin-left: 65vw;
 }

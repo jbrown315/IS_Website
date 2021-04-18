@@ -96,3 +96,19 @@ h2 {
     color: white;
     box-shadow: 0px 0px black;
 }
+
+.selected {
+    background-color: white;
+    color: black;
+}
+
+#testline {
+    color: white;
+    background-color: white;
+    height: 5px;
+    padding-top: 0px;
+    margin-top: 2.45vw;
+    width: 40vw;
+    margin-right: 0px;
+    margin-left: 65vw;
+}

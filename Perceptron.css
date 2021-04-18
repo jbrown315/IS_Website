@@ -1,0 +1,30 @@
+
+#PDiagram {
+    margin-left: 35vw;
+    width: 30vw;
+}
+
+#PFlowchart {
+    margin-left: 37vw;
+    width: 20vw;
+}
+
+#testline {
+    color: white;
+    background-color: white;
+    height: 5px;
+    padding-top: 0px;
+    margin-top: 2.45vw;
+    width: 40vw;
+    margin-right: 0px;
+    margin-left: 65vw;
+}
+
+nav a {
+    position: relative;
+}
+
+.selected {
+    background-color: white;
+    color: black;
+}
