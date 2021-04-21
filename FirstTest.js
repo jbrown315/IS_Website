@@ -78,20 +78,39 @@ for (epoch = 0; epoch < 10000; epoch++) {
 
 
 }
+
+var firstNumber = document.getElementById("first").value;
+
+var secondNumber = document.getElementById("second").value;
+
+
+
 //Taking inputs:
-var single_point = math.matrix([[0], [1]]);
+var single_point = math.matrix([[firstNumber], [secondNumber]]);
 
 //First step:
-var result1 = math.add(math.dotMultiply(single_point, weights), bias);
+var result1 = math.dotMultiply(single_point, weights);
+
+var step1 = math.add(math.subset(result1, math.index(0,0)),math.subset(result1, math.index(1,0)));
+var step2 = math.add(step1, bias);
+var step3 = math.matrix([[step2]]);
 
 //Second step:
-var result2 = sigmoid(result1);
+var result2 = sigmoid(step2);
+
+//window.prompt(result1);
+//window.prompt(result2);
+//window.prompt(weights);
+//window.prompt(math.dotMultiply(single_point, weights));
+//window.prompt(step2);
 
 ///TESTING
     var test = document.getElementById("test");
 
     //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
-    var abc = math.subset(result2, math.index(1,0));
+    //var abc = math.subset(result2, math.index(0,0));
+
+    var abc = result2;
 
     var text = document.createTextNode(abc);
 
