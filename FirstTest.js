@@ -110,9 +110,10 @@ var result2 = sigmoid(step2);
     //var abc = math.dotDivide(1, math.add(math.exp(math.unaryMinus(1)),1));
     //var abc = math.subset(result2, math.index(0,0));
 
-    var abc = result2;
 
-    var text = document.createTextNode(abc);
+    test.innerHTML = "";
+
+    var text = document.createTextNode(result2);
 
     test.appendChild(text);
 
