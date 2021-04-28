@@ -279,7 +279,7 @@ body {
 }
 
 #timetitle {
-    font-size: 5em;
+    font-size: 4em;
     color: white;
     text-shadow: 3px 3px #36454f;
     margin-bottom: 0px;
@@ -324,8 +324,8 @@ h2 {
     background-color: white;
     height: 5px;
     padding-top: 0px;
-    margin-top: 2.45vw;
-    width: 48vw;
+    margin-top: 2.32vw;
+    width: 35vw;
     margin-right: 0px;
-    margin-left: 50vw;
+    margin-left: 60vw;
 }
