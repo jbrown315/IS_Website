@@ -32,7 +32,7 @@ var target_output = math.matrix([
                            [0],
                            [1],
                            [0],
-                           [1]])
+                           [1]]);
 
 //Defining the weights
 var weights = math.matrix([
@@ -49,7 +49,9 @@ var lr = 0.05;
 
 var epoch;
 
-for (epoch = 0; epoch < 10000; epoch++) {
+var epochCount = document.getElementById("epochsB").value;
+
+for (epoch = 0; epoch < epochCount; epoch++) {
 
     var inputs = input_features;
 
@@ -86,11 +88,11 @@ for (epoch = 0; epoch < 10000; epoch++) {
 
 }
 
-var firstNumber = document.getElementById("symptom1").value;
+var firstNumber = document.getElementById("inputb1").value;
 
-var secondNumber = document.getElementById("symptom2").value;
+var secondNumber = document.getElementById("inputb2").value;
 
-var thirdNumber = document.getElementById("symptom3").value;
+var thirdNumber = document.getElementById("inputb3").value;
 
 
 
@@ -123,7 +125,7 @@ var result2 = sigmoid(step3);
 
     test.innerHTML = "";
 
-    var text = document.createTextNode(result2);
+    var text = document.createTextNode("Output: " + result2.toString());
 
     test.appendChild(text);
 

@@ -10,6 +10,7 @@
     <script src="math.js" type="text/javascript"></script>
     <script src="FirstTest.js"></script>
     <script src="CovidExample.js"></script>
+    <script src="MainCovidExample.js"></script>
 </head>
 <div class="container">
 <body>
@@ -28,30 +29,111 @@
     </div>
 <div id="main">
     <h2>The Perceptron</h2>
-    <select id="first">
-        <option>0</option>
-        <option>1</option>
-    </select>
-    <select id="second">
-        <option>0</option>
-        <option>1</option>
-    </select>
+    <div class="inputs">
+        <p>First Input:</p>
+        <select id="inputa1">
+            <option>0</option>
+            <option>1</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <p>Second Input:</p>
+        <select id="inputa2">
+            <option>0</option>
+            <option>1</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <p>Epochs:</p>
+        <select id="epochsA">
+            <option>1000</option>
+            <option>10000</option>
+        </select>
+    </div>
+
 <button onclick="myFunction()">Try it</button>
-    <p id="test"></p><br>
-    <select id="symptom1">
-        <option>0</option>
-        <option>1</option>
-    </select>
-    <select id="symptom2">
-        <option>0</option>
-        <option>1</option>
-    </select>
-    <select id="symptom3">
-        <option>0</option>
-        <option>1</option>
-    </select>
+
+    <p class="outputs" id="test"></p><br>
+
+    <div class="inputs">
+        <p>First Input:</p>
+        <select id="inputb1">
+            <option>0</option>
+            <option>1</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <p>Second Input:</p>
+        <select id="inputb2">
+            <option>0</option>
+            <option>1</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <p>Third Input:</p>
+        <select id="inputb3">
+            <option>0</option>
+            <option>1</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <p>Epochs:</p>
+        <select id="epochsB">
+            <option>1000</option>
+            <option>10000</option>
+        </select>
+    </div>
+
     <button onclick="newFunction()">Try it</button>
-    <p id="test2"></p>
+    <p class="outputs" id="test2"></p>
+    <h3>COVID-19 Symptom Checker</h3>
+    <label class="covidCheck">
+        <p>Fever or chills</p>
+        <input id="fever" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Cough</p>
+        <input id="cough" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Shortness of breath</p>
+        <input id="shortBreath" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Fatigue</p>
+        <input id="fatigue" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Muscle or body aches</p>
+        <input id="bodyAches" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Headache</p>
+        <input id="headache" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>New loss of taste or smell</p>
+        <input id="lossOfSmell" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Sore throat</p>
+        <input id="soreThroat" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="covidCheck">
+        <p>Congestion or runny nose</p>
+        <input id="congestion" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <button onclick="symptoms()">Try it</button>
+    <p class="outputs" id="symptomOut"></p><br>
 </div>
 <div id="sideright">
 

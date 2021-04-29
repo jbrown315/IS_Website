@@ -42,7 +42,9 @@ var lr = 0.05;
 
 var epoch;
 
-for (epoch = 0; epoch < 10000; epoch++) {
+var epochCount = document.getElementById("epochsA").value;
+
+for (epoch = 0; epoch < epochCount; epoch++) {
 
     var inputs = input_features;
 
@@ -79,9 +81,9 @@ for (epoch = 0; epoch < 10000; epoch++) {
 
 }
 
-var firstNumber = document.getElementById("first").value;
+var firstNumber = document.getElementById("inputa1").value;
 
-var secondNumber = document.getElementById("second").value;
+var secondNumber = document.getElementById("inputa2").value;
 
 
 
@@ -113,7 +115,7 @@ var result2 = sigmoid(step2);
 
     test.innerHTML = "";
 
-    var text = document.createTextNode(result2);
+    var text = document.createTextNode("Output: " + result2.toString());
 
     test.appendChild(text);
 
