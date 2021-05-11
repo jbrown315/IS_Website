@@ -305,6 +305,14 @@ footer p {
     font-weight: normal;
 }
 
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
 .keyTerm {
     text-decoration: underline;
     font-weight: bold;
