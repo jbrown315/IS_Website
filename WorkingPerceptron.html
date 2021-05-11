@@ -28,7 +28,16 @@
 
     </div>
 <div id="main">
+
     <h2>The Perceptron</h2>
+    <h4>What to expect:</h4>
+    <p class="expect">You can change the inputs of the Perceptron between a 0 or 1.<br>
+                      Changing the Epochs with affect the accuracy of the model.<br>
+                      Pressing the button will activate the function which will return you output<br>
+                      If your inputs include a "1" you should expect your output to be close to "1".<br>
+                      If all of your inputs are "0" then your output should be close to a "0".</p>
+    <h4>Version 1:</h4>
+
     <div class="inputs">
         <p>First Input:</p>
         <select id="inputa1">
@@ -54,7 +63,7 @@
 <button onclick="myFunction()">Try it</button>
 
     <p class="outputs" id="test"></p><br>
-
+    <h4>Version 2:</h4>
     <div class="inputs">
         <p>First Input:</p>
         <select id="inputb1">
@@ -83,10 +92,25 @@
             <option>10000</option>
         </select>
     </div>
-
     <button onclick="newFunction()">Try it</button>
     <p class="outputs" id="test2"></p>
+    <h4>How this all works:</h4>
+    <p class="expect">Prior to taking any inputs, the Perceptron was fed sample data. V1 Example: Input: [0,1] Expected Output: [1]<br>
+                      Then, each of the inputs will be assigned a weight value between 0 and 1. Ex. [0.5]<br>
+                      After getting the weights, the main code will run, which performs math at the level of multivariate calculus.<br>
+                      Each run through the code is called an epoch. After each epoch, the output will be compared to the expected output. <br>
+                      Once the error calculation has been completed, each weight will be adjusted accordingly.<br>
+                      This is why there are generally 10,000 epochs and why the Perceptron gets much more accurate and precise with more epochs.<br>
+                      Finally, after running the main code X amount of times, the weights have reached their final values.<br>
+                      The Perceptron is then fed an input list, Ex. [1,1]. However, it is not given an expected output.<br>
+                      Using the freshly adjusted weights, the Perceptron will calculate an output that should be close to 0 or 1.<br>
+                      </p>
+    <hr id="sep">
     <h3>COVID-19 Symptom Checker</h3>
+    <p class="expect">*DISCLAIMER: Output calculated with sample data. NOT MEDICALLY ACCURATE*<br>
+                      Please select any symptoms that you are experiencing:
+
+    </p>
     <label class="covidCheck">
         <p>Fever or chills</p>
         <input id="fever" type="checkbox" checked="checked">
